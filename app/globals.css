@@ -837,6 +837,360 @@ details[open] summary::after { content: "−"; }
 
 .thankYou p { color: var(--text-dim); line-height: 1.8; margin-bottom: 12px; }
 
+/* ─── Split Hero ─────────────────────────────────────────── */
+.splitHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.splitHeroLeft {
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+  padding-top: 100px;
+}
+
+.splitHeroInner {
+  max-width: 520px;
+  padding: 60px 0;
+}
+
+.credBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.credBar span {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+.credDot { opacity: 0.4; }
+
+.splitHeroInner h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 4.5vw, 5.2rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+
+.splitHeroInner h1 em { font-style: italic; color: var(--silver-light); }
+
+.splitHeroInner > p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-dim);
+  margin-bottom: 40px;
+}
+
+.splitHeroActions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.ghostLink {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+  transition: color 0.2s;
+}
+
+.ghostLink:hover { color: var(--text); }
+
+.splitHeroRight {
+  position: relative;
+  overflow: hidden;
+}
+
+.splitHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(11,25,41,0.3) 0%, rgba(11,25,41,0) 60%);
+  pointer-events: none;
+}
+
+/* ─── Credentials Strip ──────────────────────────────────── */
+.credStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 7%;
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(155,173,183,0.12);
+  border-bottom: 1px solid rgba(155,173,183,0.12);
+  gap: 20px;
+}
+
+.credStripItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.credStripNum {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--silver-light);
+  line-height: 1;
+}
+
+.credStripLabel {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.credStripDivider {
+  width: 1px;
+  height: 40px;
+  background: rgba(155,173,183,0.15);
+  flex-shrink: 0;
+}
+
+/* ─── What I Do / Service Cards ──────────────────────────── */
+.whatIDo {
+  padding: 100px 7%;
+  background: var(--navy);
+}
+
+.whatIDoHeader {
+  margin-bottom: 52px;
+}
+
+.whatIDoHeader h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 3.5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 12px;
+}
+
+.whatIDoHeader h2 em { font-style: italic; color: var(--silver-light); }
+
+.serviceCardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(155,173,183,0.12);
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px;
+  border-right: 1px solid rgba(155,173,183,0.12);
+  transition: background 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.serviceCard:last-child { border-right: none; }
+
+.serviceCard:hover { background: rgba(155,173,183,0.05); }
+
+.serviceCardNum {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--silver);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.serviceCard h3 {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver-light);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.serviceCard p {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--text-dim);
+  flex: 1;
+}
+
+.serviceCardArrow {
+  font-family: var(--font-sans);
+  color: var(--silver);
+  opacity: 0;
+  margin-top: 20px;
+  transition: opacity 0.2s;
+  font-size: 0.9rem;
+}
+
+.serviceCard:hover .serviceCardArrow { opacity: 1; }
+
+/* ─── Statement / Pull Quote ─────────────────────────────── */
+.statement {
+  background: var(--navy-light);
+  padding: 80px 7%;
+  border-top: 1px solid rgba(155,173,183,0.1);
+  border-bottom: 1px solid rgba(155,173,183,0.1);
+}
+
+.statementInner { max-width: 760px; margin: 0 auto; text-align: center; }
+
+.statementInner p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.statementInner cite {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--silver);
+  font-style: normal;
+}
+
+/* ─── About Preview ──────────────────────────────────────── */
+.aboutPreview {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  min-height: 600px;
+  background: var(--navy);
+}
+
+.aboutPreviewPhoto {
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutPreviewContent {
+  padding: 80px 7% 80px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid rgba(155,173,183,0.1);
+}
+
+.aboutPreviewContent h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 28px;
+  margin-top: 12px;
+}
+
+.aboutPreviewContent h2 em { font-style: italic; color: var(--silver-light); }
+
+.aboutPreviewContent p {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  max-width: 480px;
+}
+
+.aboutPreviewContent .outlineButton { margin-top: 12px; }
+
+/* ─── Why Private Duty ───────────────────────────────────── */
+.whySection {
+  padding: 100px 7%;
+  background: var(--navy-mid);
+}
+
+.whySection > .eyebrow { margin-bottom: 48px; }
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid rgba(155,173,183,0.12);
+}
+
+.whyItem {
+  padding: 48px 40px;
+  border-right: 1px solid rgba(155,173,183,0.12);
+}
+
+.whyItem:last-child { border-right: none; }
+
+.whyItem h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+.whyItem p {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--text-dim);
+}
+
+/* ─── Final CTA ──────────────────────────────────────────── */
+.finalCta {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  padding: 100px 7%;
+  background: var(--navy);
+  border-top: 1px solid rgba(155,173,183,0.1);
+  align-items: center;
+}
+
+.finalCtaLeft h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.finalCtaLeft p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-dim);
+  max-width: 480px;
+}
+
+.finalCtaRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finalCtaContact {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.finalCtaContact a { color: var(--silver-light); }
+
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   nav, .navCta { display: none; }
@@ -877,6 +1231,28 @@ details[open] summary::after { content: "−"; }
   .siteContactCta { padding: 72px 6%; }
 
   .formRow { grid-template-columns: 1fr; }
+
+  .splitHero { grid-template-columns: 1fr; min-height: auto; }
+  .splitHeroLeft { padding: 140px 6% 60px; }
+  .splitHeroInner { max-width: 100%; }
+  .splitHeroRight { height: 300px; }
+
+  .credStrip { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .credStripDivider { display: none; }
+
+  .serviceCardGrid { grid-template-columns: 1fr 1fr; }
+  .serviceCard { border-right: none; border-bottom: 1px solid rgba(155,173,183,0.12); }
+  .serviceCard:last-child { border-bottom: none; }
+
+  .aboutPreview { grid-template-columns: 1fr; }
+  .aboutPreviewPhoto { height: 320px; }
+  .aboutPreviewContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(155,173,183,0.1); }
+
+  .whyGrid { grid-template-columns: 1fr; }
+  .whyItem { border-right: none; border-bottom: 1px solid rgba(155,173,183,0.12); }
+  .whyItem:last-child { border-bottom: none; }
+
+  .finalCta { grid-template-columns: 1fr; gap: 40px; padding: 72px 6%; }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
