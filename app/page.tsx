@@ -135,35 +135,25 @@ export default function HomePage() {
         </section>
 
         {/* ── About / Wendy ─────────────────────────────────────── */}
-        <section className="lhAbout">
-          <div className="lhAboutPhoto">
-            <Image
-              src="/wendy.jpg"
-              alt="Wendy Bien-Aime, RN"
-              fill
-              style={{ objectFit: "cover", objectPosition: "top center" }}
-            />
-          </div>
-          <div className="lhAboutContent">
-            <p className="lhLabel">About Wendy</p>
-            <blockquote className="lhQuote">
-              "The difference between a good outcome and a bad one often comes
-              down to who is paying attention."
-            </blockquote>
-            <p>
-              Fifteen years of clinical nursing — acute settings, home-based care,
-              complex conditions. She's been the person in the room at 2am. She's
-              caught things that others missed. She's made the call that mattered.
-            </p>
-            <p>
-              This practice is small by design. Wendy is not building a staffing
-              agency. She's building a practice where every client gets her —
-              her eyes, her hands, her judgment, her number.
-            </p>
-            <Link href="/about" className="navyButton" style={{ marginTop: "8px" }}>
-              Her story
-            </Link>
-          </div>
+        <section className="lhAboutText lhAboutNoPhoto">
+          <p className="lhLabel">About Wendy</p>
+          <blockquote className="lhQuote">
+            "The difference between a good outcome and a bad one often comes
+            down to who is paying attention."
+          </blockquote>
+          <p>
+            Fifteen years of clinical nursing — acute settings, home-based care,
+            complex conditions. She's been the person in the room at 2am. She's
+            caught things that others missed. She's made the call that mattered.
+          </p>
+          <p>
+            This practice is small by design. Wendy is not building a staffing
+            agency. She's building a practice where every client gets her —
+            her eyes, her hands, her judgment, her number.
+          </p>
+          <Link href="/about" className="navyButton" style={{ marginTop: "8px", alignSelf: "flex-start" }}>
+            Her story
+          </Link>
         </section>
 
         {/* ── Pull statement ────────────────────────────────────── */}

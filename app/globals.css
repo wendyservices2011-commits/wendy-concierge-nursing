@@ -1072,6 +1072,15 @@ details[open] summary::after { content: "−"; }
 
 .lhAboutPhoto { position: relative; overflow: hidden; }
 
+.lhAboutNoPhoto {
+  padding: 100px 7%;
+  background: #F5F3EF;
+  border-top: 1px solid rgba(11,25,41,0.08);
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+  max-width: 860px;
+  border-left: none !important;
+}
+
 .lhAboutContent {
   padding: 80px 7% 80px 72px;
   display: flex;
