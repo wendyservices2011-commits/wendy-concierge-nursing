@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SiteNav from "@/app/components/SiteNav";
 import SiteFooter from "@/app/components/SiteFooter";
+import ScrollReveal from "@/app/components/ScrollReveal";
 
 export default function HomePage() {
   return (
@@ -12,16 +13,16 @@ export default function HomePage() {
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section className="lhHero">
           <div className="lhHeroText">
-            <p className="lhEyebrow">Private Duty RN · Palm Beach County, FL</p>
+            <p className="lhEyebrow heroEyebrowAnim">Private Duty RN · Palm Beach County, FL</p>
             <h1>
-              Skilled nursing care,<br />
-              <em>delivered at home.</em>
+              <span className="heroLine">Skilled nursing care,</span>
+              <span className="heroLine"><em>delivered at home.</em></span>
             </h1>
-            <p className="lhHeroSub">
+            <p className="lhHeroSub heroSubAnim">
               Not an agency. One registered nurse — fifteen years of experience —
               who comes to you, learns your situation, and stays.
             </p>
-            <div className="lhHeroActions">
+            <div className="lhHeroActions heroActionsAnim">
               <Link href="/consultation" className="navyButton">
                 Schedule a Consultation
               </Link>
@@ -42,7 +43,7 @@ export default function HomePage() {
         </section>
 
         {/* ── Credentials bar ───────────────────────────────────── */}
-        <div className="lhCredBar">
+        <div className="lhCredBar credBarAnim">
           <span>Wendy Bien-Aime, RN</span>
           <span className="lhCredSep" />
           <span>Registered Nurse · 2019</span>
@@ -56,14 +57,14 @@ export default function HomePage() {
 
         {/* ── Intro ─────────────────────────────────────────────── */}
         <section className="lhIntro">
-          <div className="lhIntroLeft">
+          <ScrollReveal className="lhIntroLeft">
             <p className="lhLabel">Why private duty nursing</p>
             <h2>
               There's a difference between<br />
               a caregiver and a nurse.
             </h2>
-          </div>
-          <div className="lhIntroRight">
+          </ScrollReveal>
+          <ScrollReveal className="lhIntroRight" delay={150}>
             <p>
               A caregiver provides comfort and company. A registered nurse can
               administer medications, assess a surgical wound, manage a feeding
@@ -76,66 +77,42 @@ export default function HomePage() {
               practice because I've seen what happens when the person in the
               room isn't qualified to notice — and what's possible when they are.
             </p>
-          </div>
+          </ScrollReveal>
         </section>
 
         {/* ── Services ─────────────────────────────────────────── */}
         <section className="lhServices">
-          <div className="lhServicesHeader">
+          <ScrollReveal className="lhServicesHeader">
             <p className="lhLabel">Services</p>
             <h2>What I do.</h2>
-          </div>
+          </ScrollReveal>
           <div className="lhServiceItems">
-            <div className="lhServiceItem">
-              <span className="lhServiceN">01</span>
-              <div>
-                <h3>Post-Surgical Recovery</h3>
-                <p>Wound care, vital sign monitoring, discharge follow-through, and early detection of complications — at home, after the hospital says you're ready to go.</p>
-              </div>
-            </div>
-            <div className="lhServiceItem">
-              <span className="lhServiceN">02</span>
-              <div>
-                <h3>Chronic Disease Management</h3>
-                <p>Medication administration, blood sugar monitoring, cardiac observation, and ongoing coordination with your loved one's physicians.</p>
-              </div>
-            </div>
-            <div className="lhServiceItem">
-              <span className="lhServiceN">03</span>
-              <div>
-                <h3>Complex &amp; Specialty Care</h3>
-                <p>G-tube and tracheostomy management, catheter care, ostomy care, IV therapy — skills that require a licensed RN, handled with experience and care.</p>
-              </div>
-            </div>
-            <div className="lhServiceItem">
-              <span className="lhServiceN">04</span>
-              <div>
-                <h3>Overnight Skilled Nursing</h3>
-                <p>Continuous RN presence through the night for clients who need monitoring, medication administration, or simply the peace of mind of a nurse in the home.</p>
-              </div>
-            </div>
-            <div className="lhServiceItem">
-              <span className="lhServiceN">05</span>
-              <div>
-                <h3>Palliative &amp; Comfort Care</h3>
-                <p>Skilled nursing focused on dignity, symptom management, and quality of life — working alongside your hospice or palliative care team.</p>
-              </div>
-            </div>
-            <div className="lhServiceItem">
-              <span className="lhServiceN">06</span>
-              <div>
-                <h3>Family Consultation</h3>
-                <p>I attend appointments, translate clinical language into plain answers, and help families understand what's happening and what to watch for.</p>
-              </div>
-            </div>
+            {[
+              { n: "01", title: "Post-Surgical Recovery", desc: "Wound care, vital sign monitoring, discharge follow-through, and early detection of complications — at home, after the hospital says you're ready to go." },
+              { n: "02", title: "Chronic Disease Management", desc: "Medication administration, blood sugar monitoring, cardiac observation, and ongoing coordination with your loved one's physicians." },
+              { n: "03", title: "Complex & Specialty Care", desc: "G-tube and tracheostomy management, catheter care, ostomy care, IV therapy — skills that require a licensed RN, handled with experience and care." },
+              { n: "04", title: "Overnight Skilled Nursing", desc: "Continuous RN presence through the night for clients who need monitoring, medication administration, or the peace of mind of a nurse in the home." },
+              { n: "05", title: "Palliative & Comfort Care", desc: "Skilled nursing focused on dignity, symptom management, and quality of life — working alongside your hospice or palliative care team." },
+              { n: "06", title: "Family Consultation", desc: "I attend appointments, translate clinical language into plain answers, and help families understand what's happening and what to watch for." },
+            ].map((s, i) => (
+              <ScrollReveal key={s.n} className="lhServiceItem" delay={i * 80}>
+                <span className="lhServiceN">{s.n}</span>
+                <div>
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
-          <Link href="/services" className="lhTextLink" style={{ marginTop: "40px", display: "inline-block" }}>
-            Full list of services →
-          </Link>
+          <ScrollReveal delay={400}>
+            <Link href="/services" className="lhTextLink" style={{ marginTop: "40px", display: "inline-block" }}>
+              Full list of services →
+            </Link>
+          </ScrollReveal>
         </section>
 
         {/* ── About / Wendy ─────────────────────────────────────── */}
-        <section className="lhAboutText lhAboutNoPhoto">
+        <ScrollReveal className="lhAboutText lhAboutNoPhoto">
           <p className="lhLabel">About Wendy</p>
           <blockquote className="lhQuote">
             "The difference between a good outcome and a bad one often comes
@@ -154,18 +131,18 @@ export default function HomePage() {
           <Link href="/about" className="navyButton" style={{ marginTop: "8px", alignSelf: "flex-start" }}>
             Her story
           </Link>
-        </section>
+        </ScrollReveal>
 
         {/* ── Pull statement ────────────────────────────────────── */}
-        <section className="lhPull">
+        <ScrollReveal className="lhPull">
           <p>
             Private duty nursing is what happens when someone decides that
             "good enough" isn't good enough for the person they love.
           </p>
-        </section>
+        </ScrollReveal>
 
         {/* ── Cross reference ───────────────────────────────────── */}
-        <section className="lhCross">
+        <ScrollReveal className="lhCross">
           <div className="lhCrossInner">
             <p className="lhLabel">Also by Wendy</p>
             <p className="lhCrossText">
@@ -183,10 +160,10 @@ export default function HomePage() {
               Visit Velvet Concierge Care →
             </a>
           </div>
-        </section>
+        </ScrollReveal>
 
         {/* ── CTA ──────────────────────────────────────────────── */}
-        <section className="lhCta">
+        <ScrollReveal className="lhCta">
           <div className="lhCtaInner">
             <h2>
               Not sure if private duty nursing<br />
@@ -206,7 +183,7 @@ export default function HomePage() {
               <a href="mailto:wendy@wendyconciergenursing.com">wendy@wendyconciergenursing.com</a>
             </p>
           </div>
-        </section>
+        </ScrollReveal>
 
       </main>
       <SiteFooter />

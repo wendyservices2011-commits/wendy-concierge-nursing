@@ -837,6 +837,123 @@ details[open] summary::after { content: "−"; }
 
 .thankYou p { color: var(--text-dim); line-height: 1.8; margin-bottom: 12px; }
 
+/* ─── Animations ─────────────────────────────────────────── */
+@keyframes heroLineIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Scroll reveal base state */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero headline lines */
+.heroLine {
+  display: block;
+  opacity: 0;
+  transform: translateY(32px);
+  animation: heroLineIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.heroLine:nth-child(1) { animation-delay: 0.2s; }
+.heroLine:nth-child(2) { animation-delay: 0.38s; }
+.heroLine:nth-child(3) { animation-delay: 0.54s; }
+
+.heroEyebrowAnim {
+  opacity: 0;
+  animation: fadeIn 0.8s ease 0.05s forwards;
+}
+
+.heroSubAnim {
+  opacity: 0;
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+}
+
+.heroActionsAnim {
+  opacity: 0;
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.88s forwards;
+}
+
+/* Credential bar sweep */
+.credBarAnim {
+  opacity: 0;
+  animation: fadeIn 1s ease 1s forwards;
+}
+
+/* Staggered service items */
+.lhServiceItem {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lhServiceItem.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover lift on service items */
+.lhServiceItem {
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.2s ease;
+}
+
+.lhServiceItem:hover {
+  background: rgba(11,25,41,0.04);
+  padding-left: 8px;
+}
+
+/* Button press feel */
+.navyButton {
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.navyButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(11,25,41,0.18);
+}
+
+.navyButton:active { transform: translateY(0); box-shadow: none; }
+
+/* Pull quote reveal */
+.lhPull p {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lhPull.revealed p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ─── Light Homepage ─────────────────────────────────────── */
 .lightMain {
   background: #F5F3EF;
