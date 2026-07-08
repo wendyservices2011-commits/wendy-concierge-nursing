@@ -25,8 +25,8 @@ export default function SiteFooter() {
           <p>
             Palm Beach County, FL<br />
             <a href="tel:+18435327181">(843) 532-7181</a><br />
-            <a href="mailto:info@wendyconciergenursing.com">
-              info@wendyconciergenursing.com
+            <a href="mailto:wendy@wendyconciergenursing.com">
+              wendy@wendyconciergenursing.com
             </a>
           </p>
           <p style={{ marginTop: "20px" }}>

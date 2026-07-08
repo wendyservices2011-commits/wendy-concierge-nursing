@@ -13,7 +13,7 @@ export default function SiteContactCta() {
       </Link>
       <p className="siteContactAlt">
         Or call directly:{" "}
-        <a href="tel:+18435327181">(843) 532-7181</a>
+        <a href="tel:+18435327181">(843) 532-7181</a> · <a href="mailto:wendy@wendyconciergenursing.com">wendy@wendyconciergenursing.com</a>
       </p>
     </section>
   );
