@@ -9,123 +9,101 @@ export default function HomePage() {
       <SiteNav />
       <main>
 
-        {/* ── Split Hero ───────────────────────────────────────── */}
-        <section className="splitHero">
-          <div className="splitHeroLeft">
-            <div className="splitHeroInner">
-              <div className="credBar">
-                <span>RN · Licensed 2019</span>
-                <span className="credDot">·</span>
-                <span>LPN Since 2010</span>
-                <span className="credDot">·</span>
-                <span>Palm Beach County</span>
-                <span className="credDot">·</span>
-                <span>Private Pay</span>
-              </div>
-              <h1>
-                Private duty nursing.<br />
-                One nurse.<br />
-                <em>Your home.</em>
-              </h1>
-              <p>
-                Not an agency. Not a rotating roster of strangers. A single
-                registered nurse — with fifteen years of experience — who comes
-                to you, knows your situation, and stays.
-              </p>
-              <div className="splitHeroActions">
-                <Link href="/consultation" className="silverButton">
-                  Schedule a Consultation
-                </Link>
-                <Link href="/services" className="ghostLink">
-                  View Services →
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="splitHeroRight">
+        {/* ── Hero ─────────────────────────────────────────────── */}
+        <section className="hpHero">
+          <div className="hpHeroBg">
             <Image
               src="/hero-nursing.jpg"
-              alt="Private duty nursing care at home"
+              alt=""
               fill
-              style={{ objectFit: "cover", objectPosition: "center" }}
+              style={{ objectFit: "cover", objectPosition: "center 30%" }}
               priority
             />
-            <div className="splitHeroOverlay" />
+            <div className="hpHeroScrim" />
           </div>
-        </section>
-
-        {/* ── Credentials Strip ────────────────────────────────── */}
-        <div className="credStrip">
-          <div className="credStripItem">
-            <span className="credStripNum">15+</span>
-            <span className="credStripLabel">Years of clinical experience</span>
+          <div className="hpHeroContent">
+            <p className="hpHeroEye">Private Duty RN · Palm Beach County</p>
+            <h1>
+              One nurse.<br />
+              Your home.<br />
+              <em>No agency.</em>
+            </h1>
           </div>
-          <div className="credStripDivider" />
-          <div className="credStripItem">
-            <span className="credStripNum">1</span>
-            <span className="credStripLabel">Nurse. One client at a time.</span>
-          </div>
-          <div className="credStripDivider" />
-          <div className="credStripItem">
-            <span className="credStripNum">RN</span>
-            <span className="credStripLabel">Florida Licensed Registered Nurse</span>
-          </div>
-          <div className="credStripDivider" />
-          <div className="credStripItem">
-            <span className="credStripNum">24/7</span>
-            <span className="credStripLabel">Available for urgent situations</span>
-          </div>
-        </div>
-
-        {/* ── What I Do ────────────────────────────────────────── */}
-        <section className="whatIDo">
-          <div className="whatIDoHeader">
-            <p className="eyebrow">What I Do</p>
-            <h2>Skilled nursing care that<br /><em>goes where you go.</em></h2>
-          </div>
-          <div className="serviceCardGrid">
-            <Link href="/services#post-surgical" className="serviceCard">
-              <span className="serviceCardNum">01</span>
-              <h3>Post-Surgical Recovery</h3>
-              <p>Wound care, vital sign monitoring, discharge follow-through, and early complication detection — in your own home.</p>
-              <span className="serviceCardArrow">→</span>
-            </Link>
-            <Link href="/services#chronic" className="serviceCard">
-              <span className="serviceCardNum">02</span>
-              <h3>Chronic Disease Management</h3>
-              <p>Medication management, blood sugar monitoring, cardiac observation, and coordination with your care team.</p>
-              <span className="serviceCardArrow">→</span>
-            </Link>
-            <Link href="/services#specialty" className="serviceCard">
-              <span className="serviceCardNum">03</span>
-              <h3>Specialty &amp; Complex Care</h3>
-              <p>G-tube, tracheostomy, catheter, ostomy care, and IV therapy — clinical skills most caregivers aren't licensed to provide.</p>
-              <span className="serviceCardArrow">→</span>
-            </Link>
-            <Link href="/services#palliative" className="serviceCard">
-              <span className="serviceCardNum">04</span>
-              <h3>Palliative &amp; Comfort Care</h3>
-              <p>Skilled nursing support focused on comfort, symptom management, and dignity — alongside your hospice team.</p>
-              <span className="serviceCardArrow">→</span>
-            </Link>
-          </div>
-        </section>
-
-        {/* ── Statement ────────────────────────────────────────── */}
-        <section className="statement">
-          <div className="statementInner">
+          <div className="hpHeroFooter">
             <p>
-              "The difference between a good outcome and a bad one often comes
-              down to who is paying attention. I show up, I stay present, and
-              I notice what others miss."
+              Skilled nursing care delivered personally — medication management,
+              wound care, complex condition monitoring — by a registered nurse
+              with fifteen years of experience.
             </p>
-            <cite>— Wendy Bien-Aime, RN · Founder</cite>
+            <Link href="/consultation" className="silverButton">
+              Schedule a Consultation
+            </Link>
           </div>
         </section>
 
-        {/* ── About Preview ────────────────────────────────────── */}
-        <section className="aboutPreview">
-          <div className="aboutPreviewPhoto">
+        {/* ── Opening Statement ─────────────────────────────────── */}
+        <section className="hpStatement">
+          <div className="hpStatementLeft">
+            <span className="hpStatCred">Wendy Bien-Aime, RN</span>
+            <span className="hpStatCred">Licensed Practical Nurse · 2010</span>
+            <span className="hpStatCred">Registered Nurse · 2019</span>
+            <span className="hpStatCred">Palm Beach County, FL</span>
+          </div>
+          <div className="hpStatementRight">
+            <p>
+              Most people don't realize there's a difference between a caregiver
+              and a nurse until something goes wrong. I started this practice
+              because I've seen what happens when the person in the room isn't
+              qualified to notice — and what's possible when they are.
+            </p>
+            <p>
+              This is a private practice. Not an agency. You get one nurse,
+              direct access, and care that never gets handed off to whoever is
+              available that day.
+            </p>
+          </div>
+        </section>
+
+        {/* ── Services ─────────────────────────────────────────── */}
+        <section className="hpServices">
+          <p className="eyebrow">What I Do</p>
+          <div className="hpServiceList">
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Post-Surgical Recovery</span>
+              <span className="hpServiceDesc">Wound care, monitoring, discharge follow-through</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Chronic Disease Management</span>
+              <span className="hpServiceDesc">Medication, blood sugar, cardiac observation</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Complex &amp; Specialty Care</span>
+              <span className="hpServiceDesc">G-tube, trach, catheter, IV therapy</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Palliative &amp; Comfort Care</span>
+              <span className="hpServiceDesc">Symptom management, dignity, alongside hospice</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Overnight Skilled Nursing</span>
+              <span className="hpServiceDesc">Continuous RN presence through the night</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+            <Link href="/services" className="hpServiceRow">
+              <span className="hpServiceName">Family Consultation &amp; Education</span>
+              <span className="hpServiceDesc">Translate clinical language into clear answers</span>
+              <span className="hpServiceArrow">→</span>
+            </Link>
+          </div>
+        </section>
+
+        {/* ── About / Photo Section ─────────────────────────────── */}
+        <section className="hpAbout">
+          <div className="hpAboutPhoto">
             <Image
               src="/wendy.jpg"
               alt="Wendy Bien-Aime, RN"
@@ -133,42 +111,43 @@ export default function HomePage() {
               style={{ objectFit: "cover", objectPosition: "top center" }}
             />
           </div>
-          <div className="aboutPreviewContent">
+          <div className="hpAboutText">
             <p className="eyebrow">About Wendy</p>
-            <h2>A nurse who built a practice<br /><em>around one idea.</em></h2>
+            <blockquote>
+              "The difference between a good outcome and a bad one often comes
+              down to who is paying attention."
+            </blockquote>
             <p>
-              Fifteen years of hands-on nursing — LPN since 2010, RN since 2019.
-              She's worked post-surgical floors, chronic care settings, and
-              home-based environments where the stakes are high and the margin
-              for inattention is zero.
+              Fifteen years. Acute settings, chronic care, home-based nursing.
+              She's been the person in the room at 2am when families didn't know
+              what was happening. She's caught things that others missed.
             </p>
-            <p>
-              Wendy Concierge Nursing is a private practice, not an agency. That
-              means one nurse, direct access, and care that never gets handed off
-              to whoever is available that day.
-            </p>
-            <Link href="/about" className="outlineButton">
-              Read Her Story →
+            <Link href="/about" className="ghostLink" style={{ fontSize: "0.78rem", letterSpacing: "0.14em" }}>
+              Read her story →
             </Link>
           </div>
         </section>
 
-        {/* ── Why Private Duty ─────────────────────────────────── */}
-        <section className="whySection">
-          <p className="eyebrow">Why Private Duty Nursing</p>
-          <div className="whyGrid">
-            <div className="whyItem">
-              <h3>When home health ends but care doesn't.</h3>
-              <p>Medicare home health is time-limited and tied to specific diagnoses. When the episode ends, the nurse stops coming — even if your loved one still needs skilled care. Private duty doesn't have that clock.</p>
-            </div>
-            <div className="whyItem">
-              <h3>When a caregiver isn't enough.</h3>
-              <p>A home health aide or companion can provide comfort and company. They cannot administer medications, assess wounds, monitor a cardiac rhythm, or manage a feeding tube. A registered nurse can.</p>
-            </div>
-            <div className="whyItem">
-              <h3>When you need someone to be accountable.</h3>
-              <p>An agency sends whoever is available. I give you my direct number. When something changes with your loved one, you hear it from me — not a coordinator who's reading from a chart.</p>
-            </div>
+        {/* ── Why it matters ────────────────────────────────────── */}
+        <section className="hpWhy">
+          <h2>
+            Some situations need a nurse,<br />
+            not just <em>someone to help.</em>
+          </h2>
+          <div className="hpWhyBody">
+            <p>
+              A caregiver can provide comfort and company. They cannot administer
+              medications, assess a wound, manage a feeding tube, or recognize the
+              early signs of sepsis. A registered nurse can — and does.
+            </p>
+            <p>
+              Medicare home health ends when the episode ends, not when your loved
+              one no longer needs skilled care. Private duty nursing doesn't have
+              that clock. Care continues for as long as you need it.
+            </p>
+            <Link href="/faq" className="outlineButton" style={{ marginTop: "16px" }}>
+              Common Questions →
+            </Link>
           </div>
         </section>
 
@@ -176,8 +155,8 @@ export default function HomePage() {
         <section className="crossRef">
           <p>
             <strong>Need homemaker or companion support instead?</strong>{" "}
-            Wendy also owns <strong>Velvet Concierge Care</strong> — a separate,
-            AHCA-licensed homemaker and companion service serving Palm Beach County.
+            Wendy also owns Velvet Concierge Care — a separate, AHCA-licensed
+            homemaker and companion service for non-clinical in-home support.
             Many families use both.
           </p>
           <a
@@ -191,29 +170,19 @@ export default function HomePage() {
         </section>
 
         {/* ── CTA ──────────────────────────────────────────────── */}
-        <section className="finalCta">
-          <div className="finalCtaLeft">
-            <h2>Ready to talk?</h2>
-            <p>
-              No intake form, no call center. Schedule a free consultation and
-              speak directly with Wendy. She'll tell you honestly whether private
-              duty nursing is the right fit — and if it's not, she'll point you
-              in the right direction.
-            </p>
-          </div>
-          <div className="finalCtaRight">
-            <Link href="/consultation" className="silverButton">
-              Schedule a Free Consultation
-            </Link>
-            <p className="finalCtaContact">
-              Or call directly:<br />
-              <a href="tel:+18435327181">(843) 532-7181</a>
-            </p>
-            <p className="finalCtaContact">
-              <a href="mailto:wendy@wendyconciergenursing.com">
-                wendy@wendyconciergenursing.com
-              </a>
-            </p>
+        <section className="hpCta">
+          <h2>Let's talk.</h2>
+          <p>
+            Schedule a free consultation. No intake form, no call center —
+            just a direct conversation with Wendy about what you need.
+          </p>
+          <Link href="/consultation" className="silverButton">
+            Schedule a Free Consultation
+          </Link>
+          <div className="hpCtaContact">
+            <a href="tel:+18435327181">(843) 532-7181</a>
+            <span>·</span>
+            <a href="mailto:wendy@wendyconciergenursing.com">wendy@wendyconciergenursing.com</a>
           </div>
         </section>
 
