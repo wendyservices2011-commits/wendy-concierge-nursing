@@ -45,9 +45,9 @@ export default function HomePage() {
         <div className="lhCredBar">
           <span>Wendy Bien-Aime, RN</span>
           <span className="lhCredSep" />
-          <span>Licensed Practical Nurse · 2010</span>
-          <span className="lhCredSep" />
           <span>Registered Nurse · 2019</span>
+          <span className="lhCredSep" />
+          <span>15+ Years of Clinical Experience</span>
           <span className="lhCredSep" />
           <span>Palm Beach County, FL</span>
           <span className="lhCredSep" />
