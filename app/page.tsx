@@ -51,8 +51,6 @@ export default function HomePage() {
           <span>15+ Years of Clinical Experience</span>
           <span className="lhCredSep" />
           <span>Palm Beach County, FL</span>
-          <span className="lhCredSep" />
-          <span>Private Pay Only</span>
         </div>
 
         {/* ── Intro ─────────────────────────────────────────────── */}
