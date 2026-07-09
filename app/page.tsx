@@ -15,8 +15,8 @@ export default function HomePage() {
           <div className="lhHeroText">
             <p className="lhEyebrow heroEyebrowAnim">Private Duty RN · Palm Beach County, FL</p>
             <h1>
-              <span className="heroLine">Skilled nursing care,</span>
-              <span className="heroLine"><em>delivered at home.</em></span>
+              <span className="heroLine">Skilled nursing care.</span>
+              <span className="heroLine"><em>At home.</em></span>
             </h1>
             <p className="lhHeroSub heroSubAnim">
               Not an agency. One registered nurse — fifteen years of experience —

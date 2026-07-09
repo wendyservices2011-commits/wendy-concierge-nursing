@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SiteNav from "@/app/components/SiteNav";
 import SiteFooter from "@/app/components/SiteFooter";
-import SiteContactCta from "@/app/components/SiteContactCta";
+import Link from "next/link";
 
 export const metadata = {
   title: "About Wendy — Wendy Concierge Nursing",
@@ -13,9 +13,10 @@ export default function AboutPage() {
   return (
     <>
       <SiteNav />
-      <main>
-        <section className="pageHero">
-          <p className="eyebrow">About Wendy</p>
+      <main className="lightMain">
+
+        <section className="ipHero">
+          <p className="lhLabel">About Wendy</p>
           <h1>
             Fifteen years of nursing.<br />
             <em>All of it hands-on.</em>
@@ -27,45 +28,41 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className="aboutStory">
-          <div className="aboutStoryLeft">
-            <p className="eyebrow">Wendy Bien-Aime, RN</p>
+        <section className="ipStory">
+          <div className="ipStoryPhoto">
             <Image
               src="/wendy.jpg"
               alt="Wendy Bien-Aime, RN — Founder of Wendy Concierge Nursing"
-              width={480}
-              height={560}
-              className="aboutPhoto"
+              fill
+              style={{ objectFit: "cover", objectPosition: "top center" }}
             />
-            <div className="aboutCredential">
-              Licensed Practical Nurse · Since 2010<br />
-              Registered Nurse · Since 2019<br />
+          </div>
+          <div className="ipStoryContent">
+            <p className="lhLabel">Wendy Bien-Aime, RN</p>
+            <div className="ipCredential">
+              Registered Nurse<br />
               Fifteen Years of Clinical Experience<br />
               Palm Beach County, Florida
             </div>
-          </div>
-
-          <div className="aboutStoryRight">
             <p>
-              I started my career as an LPN in 2010, working in environments
-              where I learned quickly that the difference between a good outcome
-              and a bad one often comes down to who is paying attention. I went
-              back for my RN in 2019, not because I had to, but because I wanted
-              more — more knowledge, more skill, more ability to help the people
-              in front of me.
+              I've spent fifteen years in clinical nursing — in environments where
+              the difference between a good outcome and a bad one often comes down
+              to who is paying attention. I became a registered nurse because I
+              wanted more — more knowledge, more skill, more ability to help the
+              people in front of me.
             </p>
             <p>
-              Over fifteen years, I've worked with patients recovering from
-              major surgery, managing multiple chronic conditions, navigating
-              new diagnoses, and approaching end of life. I've sat with families
-              at 2 in the morning when they didn't know what was happening. I've
-              caught things that others missed. I've been the person who made the
-              call that mattered.
+              Over those years I've worked with patients recovering from major
+              surgery, managing multiple chronic conditions, navigating new
+              diagnoses, and approaching end of life. I've sat with families at
+              2am when they didn't know what was happening. I've caught things
+              that others missed. I've been the person who made the call that
+              mattered.
             </p>
             <p>
               I founded Wendy Concierge Nursing because I believe private duty
-              nursing should exist at the same level of quality and care as the
-              best hospital you've ever been in — delivered in your own home, by
+              nursing should exist at the same level of quality as the best
+              hospital you've ever been in — delivered in your own home, by
               someone who knows you by name.
             </p>
             <p>
@@ -73,41 +70,40 @@ export default function AboutPage() {
               agency. I am building a nursing practice where every client gets
               me — my eyes, my hands, my judgment, my phone number.
             </p>
-            <div className="aboutSignature">— Wendy Bien-Aime, RN</div>
+            <div className="ipSignature">— Wendy Bien-Aime, RN</div>
           </div>
         </section>
 
-        <section className="aboutMission">
-          <p className="eyebrow">Philosophy</p>
-          <h2>
-            Skilled nursing should never feel like a transaction.
-            It should feel like someone{" "}
-            <em>who genuinely cares</em>{" "}
-            and genuinely knows what they're doing.
-          </h2>
+        <section className="ipPhilosophy">
+          <p className="lhLabel">Philosophy</p>
+          <blockquote className="ipPhilosophyQuote">
+            Skilled nursing should never feel like a transaction. It should feel
+            like someone <em>who genuinely cares</em> and genuinely knows what
+            they're doing.
+          </blockquote>
         </section>
 
-        <section className="aboutValues">
-          <p className="eyebrow">What You Can Expect</p>
-          <div className="aboutValuesGrid">
-            <div className="aboutValue">
-              <p className="eyebrow">Clinical Excellence</p>
+        <section className="ipValues">
+          <p className="lhLabel">What You Can Expect</p>
+          <div className="ipValuesGrid">
+            <div className="ipValue">
+              <h3>Clinical Excellence</h3>
               <p>
                 Fifteen years of experience across acute and home-based settings.
                 I bring clinical rigor to every visit — not because I have to,
                 but because your loved one deserves nothing less.
               </p>
             </div>
-            <div className="aboutValue">
-              <p className="eyebrow">Complete Transparency</p>
+            <div className="ipValue">
+              <h3>Complete Transparency</h3>
               <p>
                 You will always know what I observed, what I did, and what I
                 think you should know. No summaries softened for comfort. Clear,
                 honest communication is part of the care.
               </p>
             </div>
-            <div className="aboutValue">
-              <p className="eyebrow">Genuine Presence</p>
+            <div className="ipValue">
+              <h3>Genuine Presence</h3>
               <p>
                 I am not managing a caseload of fifty clients. I am present —
                 really present — with each person I work with. That's the entire
@@ -117,7 +113,17 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <SiteContactCta />
+        <section className="ipCta">
+          <h2>Ready to talk?</h2>
+          <p>Schedule a free consultation — no forms, no call centers, just a direct conversation.</p>
+          <Link href="/consultation" className="navyButton">Schedule a Consultation</Link>
+          <p className="lhCtaContact" style={{ marginTop: "16px" }}>
+            <a href="tel:+18435327181">(843) 532-7181</a>
+            {" · "}
+            <a href="mailto:wendy@wendyconciergenursing.com">wendy@wendyconciergenursing.com</a>
+          </p>
+        </section>
+
       </main>
       <SiteFooter />
     </>

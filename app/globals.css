@@ -954,6 +954,374 @@ details[open] summary::after { content: "−"; }
   transform: translateY(0);
 }
 
+/* ─── Inner Pages (light) ────────────────────────────────── */
+.ipHero {
+  padding: 160px 7% 100px;
+  background: #F5F3EF;
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+  max-width: 100%;
+}
+
+.ipHero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 1.08;
+  font-weight: 400;
+  color: var(--navy);
+  margin: 16px 0 24px;
+}
+
+.ipHero h1 em { font-style: italic; color: #4A6B8A; }
+
+.ipHero > p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #4A5568;
+  max-width: 520px;
+}
+
+/* About page */
+.ipStory {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  min-height: 700px;
+  background: #F5F3EF;
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipStoryPhoto { position: relative; overflow: hidden; }
+
+.ipStoryContent {
+  padding: 80px 7% 80px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipCredential {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: #6B7A8A;
+  line-height: 2.2;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipStoryContent p {
+  font-size: 0.95rem;
+  line-height: 1.95;
+  color: #4A5568;
+}
+
+.ipSignature {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--navy);
+  margin-top: 12px;
+}
+
+.ipPhilosophy {
+  padding: 100px 7%;
+  background: var(--navy);
+}
+
+.ipPhilosophyQuote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.8vw, 2.8rem);
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(240,244,246,0.9);
+  font-style: italic;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  max-width: 860px;
+}
+
+.ipPhilosophyQuote em { color: var(--silver-light); font-style: normal; }
+
+.ipValues {
+  padding: 100px 7%;
+  background: #ECEAE5;
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipValuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.ipValue h3 {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.ipValue p { font-size: 0.9rem; line-height: 1.85; color: #4A5568; }
+
+/* Services page */
+.ipServicesSection { background: #F5F3EF; }
+
+.ipServiceBlock {
+  padding: 80px 7%;
+  border-bottom: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipServiceBlockAlt { background: #ECEAE5; }
+
+.ipServiceBlockHeader { margin-bottom: 52px; }
+
+.ipServiceBlockHeader h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-top: 12px;
+}
+
+.ipServiceBlockHeader h2 em { font-style: italic; color: #4A6B8A; }
+
+.ipServiceList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.ipServiceRow h3 {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.ipServiceRow p { font-size: 0.9rem; line-height: 1.85; color: #4A5568; }
+
+.ipServiceNote {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 72px 7%;
+  background: var(--navy);
+}
+
+.ipServiceNote h4 {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--silver-light);
+  margin-bottom: 14px;
+}
+
+.ipServiceNote p { font-size: 0.88rem; line-height: 1.85; color: rgba(240,244,246,0.6); }
+
+/* FAQ page */
+.ipFaqSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  padding: 80px 7% 120px;
+  background: #F5F3EF;
+}
+
+.ipFaqSidebar { display: flex; flex-direction: column; gap: 16px; }
+
+.ipFaqSidebar h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.ipFaqSidebar p { font-size: 0.88rem; line-height: 1.8; color: #4A5568; }
+
+.ipFaqList details {
+  border-bottom: 1px solid rgba(11,25,41,0.1);
+  padding: 28px 0;
+}
+
+.ipFaqList summary {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--navy);
+  gap: 20px;
+}
+
+.ipFaqList summary::-webkit-details-marker { display: none; }
+.ipFaqList summary::after { content: "+"; font-family: var(--font-sans); font-size: 1.1rem; color: #6B7A8A; flex-shrink: 0; }
+.ipFaqList details[open] summary::after { content: "−"; }
+
+.ipFaqAnswer { padding-top: 18px; padding-right: 32px; }
+.ipFaqAnswer p { font-size: 0.9rem; line-height: 1.9; color: #4A5568; margin-bottom: 12px; }
+
+/* Consultation page */
+.ipConsultSection {
+  padding: 80px 7% 120px;
+  background: #F5F3EF;
+}
+
+.ipConsultCard { max-width: 680px; }
+
+.ipConsultStep {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6B7A8A;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.ipConsultCard h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 40px;
+}
+
+.ipConsultCard h2 em { font-style: italic; color: #4A6B8A; }
+
+.ipFormGroup { margin-bottom: 28px; }
+
+.ipFormGroup label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6B7A8A;
+  margin-bottom: 10px;
+  font-family: var(--font-sans);
+}
+
+.ipFormGroup input,
+.ipFormGroup textarea,
+.ipFormGroup select {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(11,25,41,0.15);
+  color: var(--navy);
+  padding: 14px 18px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  border-radius: 0;
+}
+
+.ipFormGroup input:focus,
+.ipFormGroup textarea:focus,
+.ipFormGroup select:focus { border-color: var(--navy); }
+
+.ipFormGroup input::placeholder,
+.ipFormGroup textarea::placeholder { color: rgba(11,25,41,0.3); }
+
+.ipFormGroup textarea { resize: vertical; min-height: 120px; line-height: 1.7; }
+
+.ipFormRow { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.ipConsultNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(11,25,41,0.1);
+}
+
+.ipConsultBack {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6B7A8A;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  transition: color 0.2s;
+}
+
+.ipConsultBack:hover { color: var(--navy); }
+
+.ipConsultPrivacy {
+  margin-top: 36px;
+  font-size: 0.76rem;
+  color: #8B9BA8;
+  line-height: 1.7;
+  padding-top: 24px;
+  border-top: 1px solid rgba(11,25,41,0.08);
+}
+
+/* Thank you page */
+.ipThankYou {
+  padding: 200px 7% 160px;
+  background: #F5F3EF;
+  min-height: 100vh;
+}
+
+.ipThankYou h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  color: var(--navy);
+  margin: 16px 0 24px;
+}
+
+.ipThankYou p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4A5568;
+  margin-bottom: 10px;
+}
+
+.ipThankYou a { color: var(--navy); border-bottom: 1px solid rgba(11,25,41,0.3); }
+
+/* Shared inner page CTA */
+.ipCta {
+  padding: 100px 7%;
+  background: #ECEAE5;
+  border-top: 1px solid rgba(11,25,41,0.08);
+}
+
+.ipCta h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.ipCta p { font-size: 0.95rem; line-height: 1.8; color: #4A5568; margin-bottom: 32px; }
+
+/* Footer on light pages */
+.lightMain + footer,
+.lightMain ~ footer { background: var(--navy); }
+
 /* ─── Light Homepage ─────────────────────────────────────── */
 .lightMain {
   background: #F5F3EF;
@@ -2143,6 +2511,18 @@ details[open] summary::after { content: "−"; }
   .whyItem { border-right: none; border-bottom: 1px solid rgba(155,173,183,0.12); }
   .whyItem:last-child { border-bottom: none; }
   .finalCta { grid-template-columns: 1fr; gap: 40px; padding: 72px 6%; }
+
+  /* Inner pages mobile */
+  .ipHero { padding: 140px 6% 72px; }
+  .ipStory { grid-template-columns: 1fr; }
+  .ipStoryPhoto { height: 340px; }
+  .ipStoryContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(11,25,41,0.08); }
+  .ipValuesGrid { grid-template-columns: 1fr; gap: 36px; }
+  .ipServiceList { grid-template-columns: 1fr; gap: 32px; }
+  .ipServiceNote { grid-template-columns: 1fr; padding: 60px 6%; gap: 40px; }
+  .ipFaqSection { grid-template-columns: 1fr; gap: 40px; padding: 60px 6% 80px; }
+  .ipFormRow { grid-template-columns: 1fr; }
+  .ipCta { padding: 72px 6%; }
 
   /* Light homepage mobile */
   .lhHero { grid-template-columns: 1fr; min-height: auto; }
