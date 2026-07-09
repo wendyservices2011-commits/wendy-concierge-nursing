@@ -167,7 +167,7 @@ export default function HomePage() {
               answer — even if that answer is that a different kind of support
               is a better fit.
             </p>
-            <Link href="/consultation" className="navyButton">
+            <Link href="/consultation" className="creamButton">
               Schedule a Free Consultation
             </Link>
             <p className="lhCtaContact">
