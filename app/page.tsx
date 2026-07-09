@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="lhCredBar credBarAnim">
           <span>Wendy Bien-Aime, RN</span>
           <span className="lhCredSep" />
-          <span>Registered Nurse · 2019</span>
+          <span>Registered Nurse</span>
           <span className="lhCredSep" />
           <span>15+ Years of Clinical Experience</span>
           <span className="lhCredSep" />
