@@ -85,7 +85,7 @@ export default function FAQPage() {
             <details>
               <summary>What's the difference between Wendy Concierge Nursing and Velvet Concierge Care?</summary>
               <div className="ipFaqAnswer">
-                <p>They are two separate businesses, both founded by Wendy Bien-Aime. Wendy Concierge Nursing is a private duty RN practice — for clients who need skilled nursing care that can only be provided by a licensed registered nurse.</p>
+                <p>They are two separate businesses I founded. Wendy Concierge Nursing is a private duty RN practice — for clients who need skilled nursing care that can only be provided by a licensed registered nurse.</p>
                 <p>Velvet Concierge Care is an AHCA-licensed homemaker and companion service — for clients who need non-clinical in-home support: companionship, personal care assistance, medication reminders, meal preparation, errands, and transportation. Many families use both. If you're not sure which fits, reach out — I'll help you figure it out.</p>
               </div>
             </details>

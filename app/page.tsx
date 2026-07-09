@@ -19,8 +19,8 @@ export default function HomePage() {
               <span className="heroLine"><em>At home.</em></span>
             </h1>
             <p className="lhHeroSub heroSubAnim">
-              Not an agency. One registered nurse — fifteen years of experience —
-              who comes to you, learns your situation, and stays.
+              I'm not an agency. I'm one registered nurse — with fifteen years
+              of experience — who comes to you, learns your situation, and stays.
             </p>
             <div className="lhHeroActions heroActionsAnim">
               <Link href="/consultation" className="navyButton">
@@ -64,10 +64,10 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal className="lhIntroRight" delay={150}>
             <p>
-              A caregiver provides comfort and company. A registered nurse can
-              administer medications, assess a surgical wound, manage a feeding
-              tube, monitor a cardiac rhythm, and recognize the early signs of
-              something going wrong.
+              A caregiver provides comfort and company. As a registered nurse,
+              I can administer medications, assess a surgical wound, manage a
+              feeding tube, monitor a cardiac rhythm, and recognize the early
+              signs of something going wrong.
             </p>
             <p>
               Most people don't realize they need that difference until they're
@@ -87,11 +87,11 @@ export default function HomePage() {
           <div className="lhServiceItems">
             {[
               { n: "01", title: "Post-Surgical Recovery", desc: "Wound care, vital sign monitoring, discharge follow-through, and early detection of complications — at home, after the hospital says you're ready to go." },
-              { n: "02", title: "Chronic Disease Management", desc: "Medication administration, blood sugar monitoring, cardiac observation, and ongoing coordination with your loved one's physicians." },
+              { n: "02", title: "Chronic Disease Management", desc: "Medication administration, blood sugar monitoring, cardiac observation, and ongoing coordination with your physicians." },
               { n: "03", title: "Complex & Specialty Care", desc: "G-tube and tracheostomy management, catheter care, ostomy care, IV therapy — skills that require a licensed RN, handled with experience and care." },
-              { n: "04", title: "Overnight Skilled Nursing", desc: "Continuous RN presence through the night for clients who need monitoring, medication administration, or the peace of mind of a nurse in the home." },
-              { n: "05", title: "Palliative & Comfort Care", desc: "Skilled nursing focused on dignity, symptom management, and quality of life — working alongside your hospice or palliative care team." },
-              { n: "06", title: "Family Consultation", desc: "I attend appointments, translate clinical language into plain answers, and help families understand what's happening and what to watch for." },
+              { n: "04", title: "Overnight Skilled Nursing", desc: "I stay through the night for clients who need monitoring, medication administration, or simply the reassurance of having a nurse in the home." },
+              { n: "05", title: "Palliative & Comfort Care", desc: "Nursing care focused on dignity, symptom management, and quality of life — I work alongside your hospice or palliative care team." },
+              { n: "06", title: "Family Consultation", desc: "I attend appointments with you, translate clinical language into plain answers, and make sure you understand what's happening every step of the way." },
             ].map((s, i) => (
               <ScrollReveal key={s.n} className="lhServiceItem" delay={i * 80}>
                 <span className="lhServiceN">{s.n}</span>
@@ -109,20 +109,20 @@ export default function HomePage() {
           </ScrollReveal>
         </section>
 
-        {/* ── About / Wendy ─────────────────────────────────────── */}
+        {/* ── About ─────────────────────────────────────────────── */}
         <ScrollReveal className="lhAboutText lhAboutNoPhoto">
-          <p className="lhLabel">About Wendy</p>
+          <p className="lhLabel">About Me</p>
           <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.8rem, 2.8vw, 3rem)", fontWeight: 400, lineHeight: 1.2, color: "var(--navy)", marginBottom: "20px" }}>
             Wendy Bien-Aime, RN
           </h2>
           <p>
-            Wendy is a registered nurse with over fifteen years of clinical
-            experience. She founded Wendy Concierge Nursing to bring skilled,
-            personalized nursing care directly to clients in their homes across
-            Palm Beach County.
+            I'm a registered nurse with over fifteen years of clinical experience.
+            I founded Wendy Concierge Nursing because I believe you deserve a
+            nurse who actually knows you — not whoever happens to be available
+            that day.
           </p>
           <Link href="/about" className="navyButton" style={{ marginTop: "20px", alignSelf: "flex-start" }}>
-            About Wendy
+            More About Me
           </Link>
         </ScrollReveal>
 
@@ -137,10 +137,10 @@ export default function HomePage() {
         {/* ── Cross reference ───────────────────────────────────── */}
         <ScrollReveal className="lhCross">
           <div className="lhCrossInner">
-            <p className="lhLabel">Also by Wendy</p>
+            <p className="lhLabel">Also by Me</p>
             <p className="lhCrossText">
               Need homemaker or companion support instead of clinical nursing?
-              Wendy also founded <strong>Velvet Concierge Care</strong> — an
+              I also founded <strong>Velvet Concierge Care</strong> — an
               AHCA-licensed homemaker and companion service for Palm Beach County.
               Many families use both.
             </p>
@@ -163,9 +163,9 @@ export default function HomePage() {
               is what you need?
             </h2>
             <p>
-              Schedule a free consultation and talk directly with Wendy. She'll
-              listen to what's going on and give you an honest answer — even if
-              that answer is that a different kind of support is a better fit.
+              Let's talk. I'll listen to what's going on and give you an honest
+              answer — even if that answer is that a different kind of support
+              is a better fit.
             </p>
             <Link href="/consultation" className="navyButton">
               Schedule a Free Consultation

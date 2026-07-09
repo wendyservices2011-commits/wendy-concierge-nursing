@@ -128,7 +128,7 @@ export default function ServicesPage() {
           <div className="ipServiceNote">
             <div>
               <h4>Private Pay · Licensed RN</h4>
-              <p>Wendy Concierge Nursing operates on a private-pay basis, which means care is never dictated by insurance limitations. Detailed invoices are provided for clients who wish to submit for long-term care insurance reimbursement.</p>
+              <p>I operate on a private-pay basis, which means your care is never dictated by insurance limitations. I provide detailed invoices for clients who wish to submit for long-term care insurance reimbursement.</p>
             </div>
             <div>
               <h4>Service Area</h4>
