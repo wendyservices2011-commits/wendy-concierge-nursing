@@ -112,22 +112,17 @@ export default function HomePage() {
         {/* ── About / Wendy ─────────────────────────────────────── */}
         <ScrollReveal className="lhAboutText lhAboutNoPhoto">
           <p className="lhLabel">About Wendy</p>
-          <blockquote className="lhQuote">
-            "The difference between a good outcome and a bad one often comes
-            down to who is paying attention."
-          </blockquote>
+          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.8rem, 2.8vw, 3rem)", fontWeight: 400, lineHeight: 1.2, color: "var(--navy)", marginBottom: "20px" }}>
+            Wendy Bien-Aime, RN
+          </h2>
           <p>
-            Fifteen years of clinical nursing — acute settings, home-based care,
-            complex conditions. She's been the person in the room at 2am. She's
-            caught things that others missed. She's made the call that mattered.
+            Wendy is a registered nurse with over fifteen years of clinical
+            experience. She founded Wendy Concierge Nursing to bring skilled,
+            personalized nursing care directly to clients in their homes across
+            Palm Beach County.
           </p>
-          <p>
-            This practice is small by design. Wendy is not building a staffing
-            agency. She's building a practice where every client gets her —
-            her eyes, her hands, her judgment, her number.
-          </p>
-          <Link href="/about" className="navyButton" style={{ marginTop: "8px", alignSelf: "flex-start" }}>
-            Her story
+          <Link href="/about" className="navyButton" style={{ marginTop: "20px", alignSelf: "flex-start" }}>
+            About Wendy
           </Link>
         </ScrollReveal>
 
