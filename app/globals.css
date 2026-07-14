@@ -2764,7 +2764,7 @@ details[open] summary::after { content: "−"; }
 .wncHero {
   position: relative;
   min-height: 92vh;
-  background: url("/hero-nursing.jpg") center 30% / cover no-repeat;
+  background: url("/hero-nursing.jpg") 40% 15% / cover no-repeat;
   display: flex;
   align-items: flex-end;
 }
