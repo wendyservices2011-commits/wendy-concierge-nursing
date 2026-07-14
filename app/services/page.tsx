@@ -118,10 +118,6 @@ export default function ServicesPage() {
                 <h3>Family Consultation &amp; Education</h3>
                 <p>I help families understand diagnoses, medication regimens, and what to watch for — translating clinical language into clear, actionable information.</p>
               </div>
-              <div className="ipServiceRow">
-                <h3>Overnight Skilled Nursing</h3>
-                <p>Continuous skilled nursing presence through the night — for clients who need ongoing monitoring, medication administration, or simply the reassurance of a nurse in the home.</p>
-              </div>
             </div>
           </div>
 

@@ -41,7 +41,7 @@ const faqs = [
   {
     q: "What are your hours?",
     a: [
-      "Scheduling is arranged directly and is flexible based on your needs. I offer daytime visits, extended hours, and overnight skilled nursing. Because this is a private practice with a limited client base, availability varies — the sooner you reach out, the better.",
+      "Scheduling is arranged directly and is flexible based on your needs. I offer daytime visits and extended hours. Because this is a private practice with a limited client base, availability varies — the sooner you reach out, the better.",
     ],
   },
   {

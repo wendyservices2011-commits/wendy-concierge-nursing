@@ -2755,3 +2755,343 @@ details[open] summary::after { content: "−"; }
   .aboutValuesGrid { grid-template-columns: 1fr 1fr; }
   .faqGrid { grid-template-columns: 1fr; gap: 48px; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   WNC (Wendy Concierge Nursing) Rebuilt Homepage
+   ══════════════════════════════════════════════════════════ */
+
+/* Hero — full bleed dark photo */
+.wncHero {
+  position: relative;
+  min-height: 92vh;
+  background: url("/hero-nursing.jpg") center 30% / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.wncHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11,25,41,0.88) 0%, rgba(11,25,41,0.40) 60%, rgba(11,25,41,0.15) 100%);
+}
+.wncHeroContent {
+  position: relative;
+  z-index: 1;
+  padding: 0 7% 80px;
+  max-width: 760px;
+}
+.wncHeroEyebrow {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 24px;
+}
+.wncHeroH1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.wncHeroH1 em {
+  font-style: italic;
+  color: var(--silver-light);
+}
+.wncHeroBtn {
+  display: inline-block;
+  padding: 16px 36px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.wncHeroBtn:hover { opacity: 0.85; }
+
+/* Trust bar */
+.wncTrustBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 22px 7%;
+  background: var(--navy);
+  color: var(--silver-light);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.wncTrustSep {
+  width: 1px;
+  height: 14px;
+  background: rgba(155,173,183,0.3);
+  flex-shrink: 0;
+}
+
+/* Services — two column */
+.wncServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 100px 7%;
+  background: var(--navy-mid);
+}
+.wncLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.wncServicesLeft {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.wncServicesH2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 3.2vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.wncServicesH2 em { font-style: italic; color: var(--silver-light); }
+.wncServicesIntro {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.wncTextLink {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+}
+.wncServicesRight { display: flex; flex-direction: column; }
+.wncServiceItem {
+  display: flex;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(155,173,183,0.1);
+}
+.wncServiceItem:first-child { border-top: 1px solid rgba(155,173,183,0.1); }
+.wncServiceN {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--gold);
+  opacity: 0.45;
+  line-height: 0.9;
+  font-weight: 400;
+  flex-shrink: 0;
+  width: 36px;
+}
+.wncServiceItem h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.wncServiceItem p {
+  font-size: 0.9rem;
+  color: var(--silver);
+  line-height: 1.75;
+}
+
+/* About — photo left, text right */
+.wncAbout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  background: var(--navy);
+}
+.wncAboutPhoto {
+  position: relative;
+  min-height: 500px;
+}
+.wncAboutText {
+  padding: 80px 7% 80px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+}
+.wncAboutH2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.wncAboutText p {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.wncOutlineBtn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 14px 32px;
+  border: 1px solid rgba(155,173,183,0.4);
+  color: var(--silver-light);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: border-color 0.2s, color 0.2s;
+}
+.wncOutlineBtn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Contact form */
+.wncContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 100px 7%;
+  background: var(--navy-mid);
+  align-items: start;
+}
+.wncContactLeft {
+  position: sticky;
+  top: 100px;
+}
+.wncContactH2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 2.8vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wncContactSub {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.wncContactInfo {
+  font-size: 0.95rem;
+  color: var(--silver);
+  line-height: 2;
+}
+.wncContactInfo a { color: var(--silver-light); text-decoration: none; }
+.wncContactInfo a:hover { color: var(--gold); }
+
+/* Form */
+.wncForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wncFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.wncFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wncFormGroup label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: rgba(155,173,183,0.6);
+}
+.wncFormGroup input,
+.wncFormGroup textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(155,173,183,0.2);
+  color: #fff;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+  border-radius: 0;
+}
+.wncFormGroup input::placeholder,
+.wncFormGroup textarea::placeholder { color: rgba(155,173,183,0.3); }
+.wncFormGroup input:focus,
+.wncFormGroup textarea:focus { border-color: var(--gold); }
+.wncFormBtn {
+  padding: 18px 32px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  align-self: flex-start;
+}
+.wncFormBtn:hover { opacity: 0.85; }
+.wncFormDisclaimer {
+  font-size: 0.78rem;
+  color: rgba(155,173,183,0.4);
+  line-height: 1.6;
+}
+
+/* Cross reference */
+.wncCross {
+  padding: 40px 7%;
+  background: var(--navy);
+  border-top: 1px solid rgba(155,173,183,0.08);
+}
+.wncCross p {
+  font-size: 0.88rem;
+  color: var(--silver);
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wncCross a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+}
+.wncCross strong { color: var(--silver-light); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wncHero { min-height: 85vh; align-items: flex-end; }
+  .wncHeroContent { padding: 0 6% 60px; }
+  .wncHeroH1 { font-size: clamp(2.6rem, 10vw, 4rem); }
+  .wncTrustBar { gap: 14px; padding: 18px 6%; font-size: 0.65rem; }
+  .wncTrustSep { display: none; }
+  .wncServices { grid-template-columns: 1fr; gap: 48px; padding: 72px 6%; }
+  .wncServicesLeft { position: static; }
+  .wncAbout { grid-template-columns: 1fr; }
+  .wncAboutPhoto { min-height: 360px; }
+  .wncAboutText { padding: 60px 6%; }
+  .wncContact { grid-template-columns: 1fr; gap: 48px; padding: 72px 6%; }
+  .wncContactLeft { position: static; }
+  .wncFormRow { grid-template-columns: 1fr; }
+  .wncFormBtn { align-self: stretch; text-align: center; }
+}
