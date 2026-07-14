@@ -3086,18 +3086,42 @@ details[open] summary::after { content: "−"; }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .wncHero { min-height: 85vh; align-items: flex-end; }
+  .wncHero { min-height: 90vh; align-items: flex-end; }
   .wncHeroContent { padding: 0 6% 60px; }
-  .wncHeroH1 { font-size: clamp(2.6rem, 10vw, 4rem); }
-  .wncTrustBar { gap: 14px; padding: 18px 6%; font-size: 0.65rem; }
+  .wncHeroH1 { font-size: clamp(2.2rem, 9vw, 3.2rem); }
+  .wncHeroBtn { display: block; text-align: center; }
+
+  .wncTrustBar {
+    gap: 10px 20px;
+    padding: 16px 6%;
+    font-size: 0.62rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .wncTrustSep { display: none; }
-  .wncServices { grid-template-columns: 1fr; gap: 48px; padding: 72px 6%; }
+
+  .wncServices { grid-template-columns: 1fr; gap: 48px; padding: 64px 6%; }
   .wncServicesLeft { position: static; }
+  .wncServicesH2 { font-size: clamp(2rem, 8vw, 3rem); }
+
   .wncAbout { grid-template-columns: 1fr; }
-  .wncAboutPhoto { min-height: 360px; }
-  .wncAboutText { padding: 60px 6%; }
-  .wncContact { grid-template-columns: 1fr; gap: 48px; padding: 72px 6%; }
+  .wncAboutPhoto { min-height: 340px; }
+  .wncAboutText { padding: 52px 6%; }
+  .wncAboutH2 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+
+  .wncContact { grid-template-columns: 1fr; gap: 40px; padding: 64px 6%; }
   .wncContactLeft { position: static; }
+  .wncContactH2 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
   .wncFormRow { grid-template-columns: 1fr; }
-  .wncFormBtn { align-self: stretch; text-align: center; }
+  .wncFormBtn { align-self: stretch; text-align: center; padding: 18px; }
+
+  .wncCross { padding: 32px 6%; }
+
+  .siteFooter { grid-template-columns: 1fr; gap: 36px; padding: 52px 6%; }
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 6%;
+  }
 }
