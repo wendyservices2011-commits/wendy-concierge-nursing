@@ -3086,7 +3086,7 @@ details[open] summary::after { content: "−"; }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .wncHero { min-height: 90vh; align-items: flex-end; }
+  .wncHero { min-height: 90vh; align-items: flex-end; background-position: 65% 15%; }
   .wncHeroContent { padding: 0 6% 60px; }
   .wncHeroH1 { font-size: clamp(2.2rem, 9vw, 3.2rem); }
   .wncHeroBtn { display: block; text-align: center; }
