@@ -34,9 +34,15 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: space-between;
   padding: 28px 6%;
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+.navScrolled {
   background: rgba(11,25,41,0.94);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(155,173,183,0.12);
+  border-bottom-color: rgba(155,173,183,0.12);
 }
 
 .logo {
