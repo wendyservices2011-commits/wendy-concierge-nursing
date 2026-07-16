@@ -27,13 +27,25 @@ export default function HomePage() {
 
         {/* ── Trust bar ─────────────────────────────────────────── */}
         <div className="wncTrustBar">
-          <span>Licensed RN</span>
-          <span className="wncTrustSep" />
-          <span>One-on-One Care</span>
-          <span className="wncTrustSep" />
-          <span>In-Home Visits</span>
-          <span className="wncTrustSep" />
-          <span>Palm Beach County, FL</span>
+          <div className="wncTrustItem">
+            <h3>Licensed RN</h3>
+            <p>Registered Nurse in the state of Florida</p>
+          </div>
+          <div className="wncTrustDivider" />
+          <div className="wncTrustItem">
+            <h3>One-on-one</h3>
+            <p>You get me — not a rotating staff</p>
+          </div>
+          <div className="wncTrustDivider" />
+          <div className="wncTrustItem">
+            <h3>In-home</h3>
+            <p>Care where your loved one already feels safe</p>
+          </div>
+          <div className="wncTrustDivider" />
+          <div className="wncTrustItem">
+            <h3>Palm Beach County</h3>
+            <p>Serving the greater PBC area</p>
+          </div>
         </div>
 
         {/* ── Services ─────────────────────────────────────────── */}
@@ -116,7 +128,7 @@ export default function HomePage() {
               is a better fit.
             </p>
             <p className="wncContactInfo">
-              <a href="tel:+18435327181">(843) 532-7181</a>
+              <a href="tel:+15168536445">(516) 853-6445</a>
               <br />
               <a href="mailto:wendy@wendyconciergenursing.com">wendy@wendyconciergenursing.com</a>
             </p>
