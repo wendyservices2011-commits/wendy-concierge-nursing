@@ -460,14 +460,16 @@ nav a:hover { color: var(--text); }
 
 .footerLinks {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   font-size: 0.58rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 500;
-  flex-wrap: wrap;
   align-items: flex-start;
   padding-top: 16px;
+  justify-content: center;
 }
 
 .footerLinks a { color: var(--text); opacity: 0.45; transition: opacity 0.2s; }
