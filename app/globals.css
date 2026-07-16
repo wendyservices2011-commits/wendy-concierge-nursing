@@ -422,12 +422,12 @@ nav a:hover { color: var(--text); }
 
 /* ─── Footer ─────────────────────────────────────────────── */
 .siteFooter {
-  background: var(--navy-mid);
-  padding: 64px 7%;
+  background: var(--navy);
+  padding: 60px 7%;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
-  gap: 48px;
-  border-top: 1px solid rgba(155,173,183,0.1);
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
 
 .footerLogo span {
@@ -435,6 +435,7 @@ nav a:hover { color: var(--text); }
   font-size: 0.95rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: var(--text);
   display: block;
 }
 
@@ -449,33 +450,41 @@ nav a:hover { color: var(--text); }
   margin-bottom: 14px;
 }
 
-.footerLogo p { font-size: 0.82rem; color: var(--text-dim); line-height: 1.65; }
+.footerLogo p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--teal);
+  opacity: 0.85;
+}
 
 .footerLinks {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 16px;
 }
 
-.footerLinks a {
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  letter-spacing: 0.05em;
-  transition: color 0.2s;
+.footerLinks a { color: var(--text); opacity: 0.45; transition: opacity 0.2s; }
+.footerLinks a:hover { opacity: 1; }
+
+.footerContact {
+  color: rgba(240,244,246,0.35);
+  line-height: 1.9;
+  font-size: 0.9rem;
+  text-align: right;
 }
 
-.footerLinks a:hover { color: var(--text); }
-
-.footerContact p {
-  font-size: 0.82rem;
-  color: var(--text-dim);
-  line-height: 2.1;
-}
-
-.footerContact a { color: var(--silver-light); }
+.footerContact a { color: var(--silver-light); text-decoration: none; transition: color 0.2s; }
+.footerContact a:hover { color: var(--teal); }
 
 .footerBottom {
-  background: var(--navy-mid);
+  background: var(--navy);
   padding: 20px 7%;
   border-top: 1px solid rgba(155,173,183,0.07);
   display: flex;
@@ -494,7 +503,7 @@ nav a:hover { color: var(--text); }
   transition: color 0.2s;
 }
 
-.footerVelvetLink:hover { color: var(--silver-light); }
+.footerVelvetLink:hover { color: var(--teal); }
 
 /* ─── Page Hero (inner pages) ────────────────────────────── */
 .pageHero {

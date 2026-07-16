@@ -7,10 +7,7 @@ export default function SiteFooter() {
         <div className="footerLogo">
           <span>Wendy Concierge Nursing</span>
           <small>Private Duty RN · Palm Beach County</small>
-          <p>
-            Private duty registered nurse services for individuals and families
-            across Palm Beach County, Florida. Licensed RN. Private pay.
-          </p>
+          <p>One nurse. One patient. Undivided attention.</p>
         </div>
 
         <nav className="footerLinks">
@@ -24,7 +21,7 @@ export default function SiteFooter() {
         <div className="footerContact">
           <p>
             Palm Beach County, FL<br />
-            <a href="tel:+18435327181">(843) 532-7181</a><br />
+            <a href="tel:+15168536445">(516) 853-6445</a><br />
             <a href="mailto:wendy@wendyconciergenursing.com">
               wendy@wendyconciergenursing.com
             </a>
