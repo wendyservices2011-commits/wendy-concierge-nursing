@@ -25,6 +25,35 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── Ticker ────────────────────────────────────────────── */}
+        <div className="ticker">
+          <div className="tickerTrack">
+            {[
+              "Palm Beach County",
+              "Private Pay",
+              "Licensed RN",
+              "One-on-One Care",
+              "In-Home Nursing",
+              "Post-Surgical Recovery",
+              "Chronic Disease Management",
+              "Available 24/7",
+              "Palm Beach County",
+              "Private Pay",
+              "Licensed RN",
+              "One-on-One Care",
+              "In-Home Nursing",
+              "Post-Surgical Recovery",
+              "Chronic Disease Management",
+              "Available 24/7",
+            ].map((label, i) => (
+              <span key={i} className="tickerItem">
+                <span className="tickerDot" />
+                {label}
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* ── Trust bar ─────────────────────────────────────────── */}
         <div className="wncTrustBar">
           <div className="wncTrustItem">

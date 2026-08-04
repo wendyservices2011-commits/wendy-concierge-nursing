@@ -857,6 +857,48 @@ details[open] summary::after { content: "−"; }
 
 .thankYou p { color: var(--text-dim); line-height: 1.8; margin-bottom: 12px; }
 
+/* ─── Scrolling Ticker ───────────────────────────────────── */
+.ticker {
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(155,173,183,0.1);
+  border-bottom: 1px solid rgba(155,173,183,0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 14px 0;
+}
+
+.tickerTrack {
+  display: inline-flex;
+  animation: tickerScroll 28s linear infinite;
+}
+
+.tickerItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(196,208,216,0.65);
+  padding-right: 48px;
+}
+
+.tickerDot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--teal);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* ─── Animations ─────────────────────────────────────────── */
 @keyframes heroLineIn {
   from { opacity: 0; transform: translateY(28px); }
