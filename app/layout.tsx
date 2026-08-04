@@ -42,7 +42,7 @@ const jsonLd = {
   description:
     "Private duty registered nurse services for Palm Beach County, Florida.",
   url: "https://wendyconciergenursing.com",
-  telephone: "(843) 532-7181",
+  telephone: "(561) 524-0011",
   email: "wendy@wendyconciergenursing.com",
   address: {
     "@type": "PostalAddress",

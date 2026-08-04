@@ -32,7 +32,7 @@ export default function ConsultationPage() {
             <p>I'll be in touch within one business day.</p>
             <p>
               If your situation is urgent, please call directly:{" "}
-              <a href="tel:+18435327181">(843) 532-7181</a>
+              <a href="tel:+115615240011">(561) 524-0011</a>
             </p>
           </section>
         </main>

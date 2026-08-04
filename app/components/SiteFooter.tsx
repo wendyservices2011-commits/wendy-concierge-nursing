@@ -21,7 +21,7 @@ export default function SiteFooter() {
         <div className="footerContact">
           <p>
             Palm Beach County, FL<br />
-            <a href="tel:+15168536445">(516) 853-6445</a><br />
+            <a href="tel:+15615240011">(561) 524-0011</a><br />
             <a href="mailto:wendy@wendyconciergenursing.com">
               wendy@wendyconciergenursing.com
             </a>
