@@ -2,9 +2,9 @@
 
 /* ─── Brand Tokens ───────────────────────────────────────── */
 :root {
-  --navy:         #152d46;
-  --navy-mid:     #1e3d5c;
-  --navy-light:   #2a5070;
+  --navy:         #1d4878;
+  --navy-mid:     #265d94;
+  --navy-light:   #3070a8;
   --silver:       #9BADB7;
   --silver-light: #C4D0D8;
   --text:         #F0F4F6;
@@ -43,7 +43,7 @@ img { max-width: 100%; display: block; }
   transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 .navScrolled {
-  background: rgba(21,45,70,0.94);
+  background: rgba(29,72,120,0.94);
   backdrop-filter: blur(12px);
   border-bottom-color: rgba(155,173,183,0.12);
 }
@@ -163,10 +163,10 @@ nav a:hover { color: var(--text); }
   min-height: 100vh;
   background:
     linear-gradient(to right,
-      rgba(21,45,70,0.97) 0%,
-      rgba(21,45,70,0.88) 38%,
-      rgba(21,45,70,0.45) 65%,
-      rgba(21,45,70,0.12) 100%),
+      rgba(29,72,120,0.97) 0%,
+      rgba(29,72,120,0.88) 38%,
+      rgba(29,72,120,0.45) 65%,
+      rgba(29,72,120,0.12) 100%),
     url("/hero-nursing.jpg") center right / cover no-repeat;
   display: flex;
   align-items: center;
@@ -288,9 +288,9 @@ nav a:hover { color: var(--text); }
   min-height: 560px;
   background:
     linear-gradient(to right,
-      rgba(21,45,70,0.08) 0%,
-      rgba(21,45,70,0.7) 45%,
-      rgba(21,45,70,0.96) 100%),
+      rgba(29,72,120,0.08) 0%,
+      rgba(29,72,120,0.7) 45%,
+      rgba(29,72,120,0.96) 100%),
     url("/nursing-care.jpg") center left / cover no-repeat;
   display: flex;
   align-items: center;
@@ -987,7 +987,7 @@ details[open] summary::after { content: "−"; }
 }
 
 .lhServiceItem:hover {
-  background: rgba(21,45,70,0.04);
+  background: rgba(29,72,120,0.04);
   padding-left: 8px;
 }
 
@@ -998,7 +998,7 @@ details[open] summary::after { content: "−"; }
 
 .navyButton:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(21,45,70,0.18);
+  box-shadow: 0 4px 16px rgba(29,72,120,0.18);
 }
 
 .navyButton:active { transform: translateY(0); box-shadow: none; }
@@ -1020,7 +1020,7 @@ details[open] summary::after { content: "−"; }
 .ipHero {
   padding: 160px 7% 100px;
   background: #F5F3EF;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
   max-width: 100%;
 }
 
@@ -1048,7 +1048,7 @@ details[open] summary::after { content: "−"; }
   grid-template-columns: 1fr 1.5fr;
   min-height: 700px;
   background: #F5F3EF;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipStoryPhoto { position: relative; overflow: hidden; }
@@ -1058,7 +1058,7 @@ details[open] summary::after { content: "−"; }
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-left: 1px solid rgba(21,45,70,0.08);
+  border-left: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipCredential {
@@ -1069,7 +1069,7 @@ details[open] summary::after { content: "−"; }
   line-height: 2.2;
   text-transform: uppercase;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipStoryContent p {
@@ -1109,7 +1109,7 @@ details[open] summary::after { content: "−"; }
 .ipValues {
   padding: 100px 7%;
   background: #ECEAE5;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipValuesGrid {
@@ -1136,7 +1136,7 @@ details[open] summary::after { content: "−"; }
 
 .ipServiceBlock {
   padding: 80px 7%;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipServiceBlockAlt { background: #ECEAE5; }
@@ -1364,7 +1364,7 @@ details[open] summary::after { content: "−"; }
 .ipFaqSidebar p { font-size: 0.88rem; line-height: 1.8; color: #4A5568; }
 
 .ipFaqList details {
-  border-bottom: 1px solid rgba(21,45,70,0.1);
+  border-bottom: 1px solid rgba(29,72,120,0.1);
   padding: 28px 0;
 }
 
@@ -1434,7 +1434,7 @@ details[open] summary::after { content: "−"; }
 .ipFormGroup select {
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid rgba(21,45,70,0.15);
+  border: 1px solid rgba(29,72,120,0.15);
   color: var(--navy);
   padding: 14px 18px;
   font-family: var(--font-sans);
@@ -1450,7 +1450,7 @@ details[open] summary::after { content: "−"; }
 .ipFormGroup select:focus { border-color: var(--navy); }
 
 .ipFormGroup input::placeholder,
-.ipFormGroup textarea::placeholder { color: rgba(21,45,70,0.3); }
+.ipFormGroup textarea::placeholder { color: rgba(29,72,120,0.3); }
 
 .ipFormGroup textarea { resize: vertical; min-height: 120px; line-height: 1.7; }
 
@@ -1462,7 +1462,7 @@ details[open] summary::after { content: "−"; }
   align-items: center;
   margin-top: 40px;
   padding-top: 28px;
-  border-top: 1px solid rgba(21,45,70,0.1);
+  border-top: 1px solid rgba(29,72,120,0.1);
 }
 
 .ipConsultBack {
@@ -1485,7 +1485,7 @@ details[open] summary::after { content: "−"; }
   color: #8B9BA8;
   line-height: 1.7;
   padding-top: 24px;
-  border-top: 1px solid rgba(21,45,70,0.08);
+  border-top: 1px solid rgba(29,72,120,0.08);
 }
 
 /* Thank you page */
@@ -1510,13 +1510,13 @@ details[open] summary::after { content: "−"; }
   margin-bottom: 10px;
 }
 
-.ipThankYou a { color: var(--navy); border-bottom: 1px solid rgba(21,45,70,0.3); }
+.ipThankYou a { color: var(--navy); border-bottom: 1px solid rgba(29,72,120,0.3); }
 
 /* Shared inner page CTA */
 .ipCta {
   padding: 100px 7%;
   background: #ECEAE5;
-  border-top: 1px solid rgba(21,45,70,0.08);
+  border-top: 1px solid rgba(29,72,120,0.08);
 }
 
 .ipCta h2 {
@@ -1544,7 +1544,7 @@ details[open] summary::after { content: "−"; }
 .lightMain ~ * .nav,
 .navLight {
   background: rgba(245,243,239,0.96);
-  border-bottom: 1px solid rgba(21,45,70,0.1);
+  border-bottom: 1px solid rgba(29,72,120,0.1);
 }
 
 .lhEyebrow {
@@ -1573,7 +1573,7 @@ details[open] summary::after { content: "−"; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--navy);
-  border-bottom: 1px solid rgba(21,45,70,0.3);
+  border-bottom: 1px solid rgba(29,72,120,0.3);
   padding-bottom: 2px;
   transition: border-color 0.2s;
 }
@@ -1701,7 +1701,7 @@ details[open] summary::after { content: "−"; }
   gap: 80px;
   padding: 120px 7%;
   background: #F5F3EF;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .lhIntroLeft h2 {
@@ -1724,7 +1724,7 @@ details[open] summary::after { content: "−"; }
 .lhServices {
   padding: 120px 7%;
   background: #ECEAE5;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .lhServicesHeader { margin-bottom: 60px; }
@@ -1742,18 +1742,18 @@ details[open] summary::after { content: "−"; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  border-top: 1px solid rgba(21,45,70,0.1);
+  border-top: 1px solid rgba(29,72,120,0.1);
 }
 
 .lhServiceItem {
   display: flex;
   gap: 24px;
   padding: 40px 0;
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
   padding-right: 48px;
 }
 
-.lhServiceItem:nth-child(odd) { padding-right: 48px; border-right: 1px solid rgba(21,45,70,0.08); }
+.lhServiceItem:nth-child(odd) { padding-right: 48px; border-right: 1px solid rgba(29,72,120,0.08); }
 .lhServiceItem:nth-child(even) { padding-left: 48px; padding-right: 0; }
 
 .lhServiceN {
@@ -1793,8 +1793,8 @@ details[open] summary::after { content: "−"; }
 .lhAboutNoPhoto {
   padding: 100px 7%;
   background: #F5F3EF;
-  border-top: 1px solid rgba(21,45,70,0.08);
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-top: 1px solid rgba(29,72,120,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
   max-width: 860px;
   border-left: none !important;
 }
@@ -1805,7 +1805,7 @@ details[open] summary::after { content: "−"; }
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border-left: 1px solid rgba(21,45,70,0.08);
+  border-left: 1px solid rgba(29,72,120,0.08);
 }
 
 .lhQuote {
@@ -1847,8 +1847,8 @@ details[open] summary::after { content: "−"; }
 .lhCross {
   padding: 80px 7%;
   background: #ECEAE5;
-  border-top: 1px solid rgba(21,45,70,0.08);
-  border-bottom: 1px solid rgba(21,45,70,0.08);
+  border-top: 1px solid rgba(29,72,120,0.08);
+  border-bottom: 1px solid rgba(29,72,120,0.08);
 }
 
 .lhCrossInner { max-width: 680px; }
@@ -1935,7 +1935,7 @@ details[open] summary::after { content: "−"; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(21,45,70,0.98) 0%, rgba(21,45,70,0.6) 40%, rgba(21,45,70,0.3) 100%);
+    linear-gradient(to top, rgba(29,72,120,0.98) 0%, rgba(29,72,120,0.6) 40%, rgba(29,72,120,0.3) 100%);
 }
 
 .hpHeroContent {
@@ -2240,7 +2240,7 @@ details[open] summary::after { content: "−"; }
 .splitHeroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(21,45,70,0.3) 0%, rgba(21,45,70,0) 60%);
+  background: linear-gradient(to right, rgba(29,72,120,0.3) 0%, rgba(29,72,120,0) 60%);
   pointer-events: none;
 }
 
@@ -2426,7 +2426,7 @@ details[open] summary::after { content: "−"; }
 .splitHeroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(21,45,70,0.3) 0%, rgba(21,45,70,0) 60%);
+  background: linear-gradient(to right, rgba(29,72,120,0.3) 0%, rgba(29,72,120,0) 60%);
   pointer-events: none;
 }
 
@@ -2713,7 +2713,7 @@ details[open] summary::after { content: "−"; }
   .difference {
     padding: 60px 6%;
     background:
-      linear-gradient(rgba(21,45,70,0.9), rgba(21,45,70,0.96)),
+      linear-gradient(rgba(29,72,120,0.9), rgba(29,72,120,0.96)),
       url("/nursing-care.jpg") center / cover no-repeat;
     justify-content: flex-start;
   }
@@ -2760,7 +2760,7 @@ details[open] summary::after { content: "−"; }
   .ipHero { padding: 140px 6% 72px; }
   .ipStory { grid-template-columns: 1fr; }
   .ipStoryPhoto { height: 340px; }
-  .ipStoryContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(21,45,70,0.08); }
+  .ipStoryContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(29,72,120,0.08); }
   .ipValuesGrid { grid-template-columns: 1fr; gap: 36px; }
   .ipServiceList { grid-template-columns: 1fr; gap: 32px; }
   .ipServiceNote { grid-template-columns: 1fr; padding: 60px 6%; gap: 40px; }
@@ -2781,7 +2781,7 @@ details[open] summary::after { content: "−"; }
   .lhServiceItem:nth-child(even) { padding: 32px 0; border-right: none; padding-left: 0; padding-right: 0; }
   .lhAbout { grid-template-columns: 1fr; }
   .lhAboutPhoto { height: 380px; }
-  .lhAboutContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(21,45,70,0.08); }
+  .lhAboutContent { padding: 60px 6%; border-left: none; border-top: 1px solid rgba(29,72,120,0.08); }
   .lhPull { padding: 80px 6%; }
   .lhCross { padding: 60px 6%; }
   .lhCta { padding: 80px 6%; }
@@ -2833,7 +2833,7 @@ details[open] summary::after { content: "−"; }
 .wncHeroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(21,45,70,0.88) 0%, rgba(21,45,70,0.40) 60%, rgba(21,45,70,0.15) 100%);
+  background: linear-gradient(to top, rgba(29,72,120,0.88) 0%, rgba(29,72,120,0.40) 60%, rgba(29,72,120,0.15) 100%);
 }
 .wncHeroContent {
   position: relative;
@@ -2896,7 +2896,7 @@ details[open] summary::after { content: "−"; }
 }
 .wncTrustItem p {
   font-size: 0.85rem;
-  color: rgba(21,45,70,0.55);
+  color: rgba(29,72,120,0.55);
   line-height: 1.5;
 }
 .wncTrustDivider {
@@ -2942,7 +2942,7 @@ details[open] summary::after { content: "−"; }
 .wncServicesH2 em { font-style: italic; color: var(--navy); }
 .wncServicesIntro {
   font-size: 1rem;
-  color: rgba(21,45,70,0.6);
+  color: rgba(29,72,120,0.6);
   line-height: 1.75;
   margin-bottom: 32px;
 }
@@ -2961,9 +2961,9 @@ details[open] summary::after { content: "−"; }
   display: flex;
   gap: 24px;
   padding: 32px 0;
-  border-bottom: 1px solid rgba(21,45,70,0.1);
+  border-bottom: 1px solid rgba(29,72,120,0.1);
 }
-.wncServiceItem:first-child { border-top: 1px solid rgba(21,45,70,0.1); }
+.wncServiceItem:first-child { border-top: 1px solid rgba(29,72,120,0.1); }
 .wncServiceN {
   font-family: var(--font-serif);
   font-size: 2rem;
@@ -2983,7 +2983,7 @@ details[open] summary::after { content: "−"; }
 }
 .wncServiceItem p {
   font-size: 0.9rem;
-  color: rgba(21,45,70,0.6);
+  color: rgba(29,72,120,0.6);
   line-height: 1.75;
 }
 
@@ -3057,13 +3057,13 @@ details[open] summary::after { content: "−"; }
 }
 .wncContactSub {
   font-size: 1rem;
-  color: rgba(21,45,70,0.6);
+  color: rgba(29,72,120,0.6);
   line-height: 1.75;
   margin-bottom: 32px;
 }
 .wncContactInfo {
   font-size: 0.95rem;
-  color: rgba(21,45,70,0.6);
+  color: rgba(29,72,120,0.6);
   line-height: 2;
 }
 .wncContactInfo a { color: var(--navy); text-decoration: none; }
@@ -3090,12 +3090,12 @@ details[open] summary::after { content: "−"; }
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-weight: 500;
-  color: rgba(21,45,70,0.5);
+  color: rgba(29,72,120,0.5);
 }
 .wncFormGroup input,
 .wncFormGroup textarea {
   background: #fff;
-  border: 1px solid rgba(21,45,70,0.15);
+  border: 1px solid rgba(29,72,120,0.15);
   color: var(--navy);
   padding: 14px 16px;
   font-size: 0.95rem;
@@ -3106,7 +3106,7 @@ details[open] summary::after { content: "−"; }
   border-radius: 6px;
 }
 .wncFormGroup input::placeholder,
-.wncFormGroup textarea::placeholder { color: rgba(21,45,70,0.3); }
+.wncFormGroup textarea::placeholder { color: rgba(29,72,120,0.3); }
 .wncFormGroup input:focus,
 .wncFormGroup textarea:focus { border-color: var(--teal); }
 .wncFormBtn {
@@ -3126,7 +3126,7 @@ details[open] summary::after { content: "−"; }
 .wncFormBtn:hover { opacity: 0.85; }
 .wncFormDisclaimer {
   font-size: 0.78rem;
-  color: rgba(21,45,70,0.4);
+  color: rgba(29,72,120,0.4);
   line-height: 1.6;
 }
 
@@ -3134,11 +3134,11 @@ details[open] summary::after { content: "−"; }
 .wncCross {
   padding: 40px 7%;
   background: var(--cream-dark);
-  border-top: 1px solid rgba(21,45,70,0.08);
+  border-top: 1px solid rgba(29,72,120,0.08);
 }
 .wncCross p {
   font-size: 0.88rem;
-  color: rgba(21,45,70,0.85);
+  color: rgba(29,72,120,0.85);
   line-height: 1.75;
   max-width: 680px;
   margin: 0 auto;
