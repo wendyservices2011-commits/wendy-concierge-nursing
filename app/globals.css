@@ -3138,7 +3138,7 @@ details[open] summary::after { content: "−"; }
 }
 .wncCross p {
   font-size: 0.88rem;
-  color: rgba(29,72,120,0.85);
+  color: rgba(30,40,55,0.82);
   line-height: 1.75;
   max-width: 680px;
   margin: 0 auto;
@@ -3149,7 +3149,7 @@ details[open] summary::after { content: "−"; }
   text-decoration: underline;
   font-weight: 600;
 }
-.wncCross strong { color: var(--silver-light); }
+.wncCross strong { color: #1a2a3a; font-weight: 700; }
 
 /* Mobile */
 @media (max-width: 768px) {
